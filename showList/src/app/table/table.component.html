@@ -1,0 +1,20 @@
+<div class="table-container">
+  <table class="items_table">
+    <thead>
+    <tr>
+      <th width="80">#ID</th>
+      <th>Number</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of items | paginate : {
+                  itemsPerPage: 10,
+                  currentPage: page
+                }">
+      <th>{{ item.itemId }}</th>
+      <td>{{ item.itemNumber }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<pagination-controls (pageChange)="onTableDataChange($event)"></pagination-controls>

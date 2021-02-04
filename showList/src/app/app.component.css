@@ -1,0 +1,15 @@
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 3px;
+  background-color: #a2a4a4;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+}
